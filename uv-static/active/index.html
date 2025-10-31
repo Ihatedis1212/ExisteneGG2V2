@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("message").textContent = "Redirecting to demo (/active)...";
+
+            setTimeout(function () {
+                window.location.href = "/active";
+            }, 2000);
+        });
+    </script>
+</head>
+<body>
+    <h1 id="message">Redirecting...</h1>
+</body>
+</html>
